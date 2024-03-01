@@ -1,3 +1,50 @@
 #qna{
     display: none;
+    width: 100%;
+}
+
+.qBox{
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.answerBox{
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+}
+.answerList{
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+}
+@media (hover: hover) and (pointer: fine) {
+    .answerList:not(:disabled):hover{
+        background-color: pink;
+        color: whitesmoke;
+    }
+  }
+.answerList.clicked:disabled{
+    background-color: pink; /* 클릭한 버튼의 색상 */
+    color: whitesmoke;
+  }
+
+.status{
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+.statusBar{
+    height: 100%;
+    width: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+0,0a77d5+100,87bcea+100 */
+    background: linear-gradient(to bottom,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 0%,rgba(10,119,213,1) 100%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    border-radius: 20px;
 }
